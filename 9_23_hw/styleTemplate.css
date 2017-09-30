@@ -3,7 +3,8 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777;
-  background: url("../images/concrete_seamless.png");
+  background-image: url("images/concrete_seamless.png");
+  margin: 0;
 }
 
 * {
@@ -200,8 +201,13 @@ h3,
 
 /* contact page */
 
+ul {
+  padding: 0;
+}
+
 #contact-form ul {
   margin-bottom: 20px;
+  list-style-type: none;
 }
 
 #contact-form li {
@@ -237,3 +243,144 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+@media screen and (max-width: 980px) {
+  /*index*/
+  .auth-image {
+    width: 100%;
+  }
+  p {
+   float: none; 
+  }
+  .main-section {
+    max-width: 450px;
+    margin-left: 100px;
+  }
+  .sidebar {
+    margin-right: 100px;
+  }
+  #logo {
+    margin-left: 100px;
+  }
+  nav {
+    margin-right: 100px;
+  }
+  /*portfolio*/
+  .main-section {
+    padding-right: 50px;
+    width: 450px;
+  }
+  .work {
+    width: 370px;
+  }
+  /*contact*/
+  ul {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .auth-image {
+    width: 300px;
+  }
+  .main-section {
+    max-width: 700px;
+    width: 100%;
+    margin-left: 25px;
+  }
+  .sidebar {
+    margin-right: 25px;
+  }
+  #logo {
+    margin-left: 25px;
+  }
+  nav {
+    margin-right: 25px;
+  }
+  .sidebar {
+    float: left;
+    width: 700px;
+    margin-left: 25px;
+    margin-right: 25px;
+    max-width: 700px;
+  }
+  /*portfolio*/
+  .work {
+    width: 288px;
+  }
+  /*contact*/
+}
+
+@media screen and (max-width: 640px) {
+  header{
+    position: static;
+  }
+  #logo {
+    width: 100%;
+    margin: 0;
+  }
+  nav {
+    padding-left: 50px;
+    width: 100%;
+    margin: 0;
+    height: 75px;
+    line-height: 400%;
+    word-spacing: 50px;
+  }
+  .auth-image {
+    width: 100%;
+  }
+  .main-section {
+    max-width: 600px;
+    width: 100%;
+  }
+  .sidebar {
+    margin-right: 25px;
+  }
+  .sidebar {
+    float: left;
+    width: 600px;
+    margin-left: 25px;
+    margin-right: 25px;
+    max-width: 600px;
+  }
+  #masthead {
+    margin-bottom: 25px;
+  }
+  .main-section {
+    margin-top: 50px;
+    padding-top: 15px;
+  }
+  nav a {
+    padding-left: 50px;
+  }
+  /*portfolio*/
+  .work {
+    width: 100%;
+  }
+  /*contact*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
